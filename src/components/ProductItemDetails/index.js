@@ -160,8 +160,8 @@ class ProductItemDetails extends Component {
                 <hr className="horizontal-line" />
                 <div className="quantity-container">
                   <button
+                    aria-label="minus"
                     type="button"
-                    aria-label="decrement"
                     className="quantity-controller-button"
                     onClick={this.onDecrementQuantity}
                     data-testid="minus"
@@ -170,9 +170,9 @@ class ProductItemDetails extends Component {
                   </button>
                   <p className="quantity">{quantity}</p>
                   <button
+                    aria-label="plus"
                     type="button"
                     className="quantity-controller-button"
-                    aria-label="increment"
                     onClick={this.onIncrementQuantity}
                     data-testid="plus"
                   >

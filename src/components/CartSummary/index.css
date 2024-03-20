@@ -18,7 +18,7 @@
 }
 
 .order-total-label {
-  color: #616e7c;
+  color: #070b1a;
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 500;
@@ -31,7 +31,7 @@
 }
 
 .total-items {
-  color: #616e7c;
+  color: #01030a;
   font-family: 'Roboto';
   font-size: 12px;
   margin-top: 2px;
@@ -68,4 +68,51 @@
   .d-lg-none {
     display: none;
   }
+}
+
+.modal-container {
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#eb4034, #386b44, #ffffff, #dfb4ed);
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
+
+.payment-name {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  align-self: center;
+  margin-right: 4px;
+  width: 100px;
+}
+
+.bill-payment-image {
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.radio {
+  height: 20px;
+  margin-bottom: 3px;
+}
+
+.order-displaced {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: green;
 }

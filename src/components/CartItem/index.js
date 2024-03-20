@@ -15,18 +15,15 @@ const CartItem = props => (
       } = value
       const {cartItemDetails} = props
       const {id, title, brand, quantity, price, imageUrl} = cartItemDetails
-      const onRemoveCartItem = () => {
-        removeCartItem(id)
-      }
-
       const onClickDecrement = () => {
         decrementCartItemQuantity(id)
       }
-
       const onClickIncrement = () => {
         incrementCartItemQuantity(id)
       }
-
+      const onRemoveCartItem = () => {
+        removeCartItem(id)
+      }
       const totalPrice = price * quantity
 
       return (
@@ -40,21 +37,21 @@ const CartItem = props => (
             <div className="cart-quantity-container">
               <button
                 type="button"
-                aria-label="decrement"
-                data-testid="minus"
                 className="quantity-controller-button"
+                data-testid="minus"
                 onClick={onClickDecrement}
               >
+                {' '}
                 <BsDashSquare color="#52606D" size={12} />
               </button>
               <p className="cart-quantity">{quantity}</p>
               <button
                 type="button"
-                aria-label="increment"
-                data-testid="plus"
                 className="quantity-controller-button"
+                data-testid="plus"
                 onClick={onClickIncrement}
               >
+                {' '}
                 <BsPlusSquare color="#52606D" size={12} />
               </button>
             </div>
@@ -63,7 +60,6 @@ const CartItem = props => (
               <button
                 className="remove-button"
                 type="button"
-                data-testid="remove"
                 onClick={onRemoveCartItem}
               >
                 Remove
@@ -72,11 +68,11 @@ const CartItem = props => (
           </div>
           <button
             className="delete-button"
-            aria-label="delete"
             type="button"
-            data-tesid="remove"
             onClick={onRemoveCartItem}
+            data-testid="remove"
           >
+            {' '}
             <AiFillCloseCircle color="#616E7C" size={20} />
           </button>
         </li>
